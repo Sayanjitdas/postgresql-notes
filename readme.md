@@ -59,3 +59,19 @@ CREATE TABLE Order (
 >The DROP DATABASE command with the IF EXISTS clause will only drop the database if it exists. Otherwise, it will return a notice. This can be useful in cases where we aren’t sure if the database exists or not.
 
 >The `DROP DATABASE customer_db;` command will return an error as the database does not exist. The `DROP DATABASE IF EXISTS customer_db;` command will not return an error. Instead, we’ll see a notice like NOTICE: database "customer_db" does not exist, skipping. This can be particularly useful in automated scripts where we want the command to succeed regardless of whether the database is present. This helps to make the operation idempotent, meaning it can be executed multiple times without different outcomes.
+
+### Renaming a database
+
+`ALTER DATABASE <old_name> RENAME TO <new_name>;`
+
+>The ALTER DATABASE will only change the name of the database and not its contents. Also, we must make sure to update any references to the database in our code or queries to reflect the new name.
+
+### Renaming a table
+`ALTER TABLE <old_name> RENAME TO <new_name>;`
+>This will only change the name of the table and not its contents. Also, we have to make sure to update any references to the table in our code or queries to reflect the new name.
+
+### Dropping a table
+
+`DROP TABLE <table_name>;`
+>The DROP TABLE command will permanently delete the table and any data stored in it. We can also use IF EXIST clause as well with Drop table like `DROP TABLE IF EXISTS <table_name>;`
+
