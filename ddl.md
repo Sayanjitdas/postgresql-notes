@@ -1,3 +1,18 @@
+# Data Definition language
+
+**Content**
+- [Creating database](#creating-a-database)
+- [Creating tables](#creating-tables)
+- [Creating tables with PK and FK](#creating-tables-with-primary-key)
+- [Truncate tables](#truncate-table)
+- [Deleting and renaming a database](#deleting-a-database)
+- [Renaming and Deleting a table](#renaming-a-table)
+- [Adding and dropping Columns](#adding-columns)
+- [Setting and dropping default values for columns](#setting-default-values-for-columns)
+- [Renaming Columns](#renaming-columns)
+- [Adding Constraint](#adding-constraint)
+- [Dropping Constraint](#dropping-a-constraint)
+
 ### Creating a database
 
 `CREATE DATABASE <database name>;`
