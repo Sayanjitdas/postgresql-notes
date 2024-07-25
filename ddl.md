@@ -40,7 +40,7 @@ CREATE TABLE Order (
 ```
 > A foreign key is a column or a set of columns in one table that provides a link between data in two tables. A foreign key value must match an existing primary key value in the other table. PostgreSQL will raise an error if we try to insert or update a row in the child table with values that don’t exist in the parent table. PostgreSQL uses the FOREIGN KEY column constraint to create a foreign key.
 
-### TRUNCATE TABLE
+### Truncate table
 `TRUNCATE TABLE <table_name>;`
 
 > If we want to delete all the data in the table and reset the serial primary key to 1 we use truncate.
@@ -88,7 +88,7 @@ ALTER TABLE <table_name>
 
 > We can use the IF EXISTS clause with Drop columns like `ALTER TABLE <table_name> DROP Column IF EXISTS phone_number;`
 
-### setting default values for columns
+### Setting default values for columns
 ```
 ALTER TABLE 
   <table_name> 
@@ -114,7 +114,7 @@ ALTER TABLE
   <table_name> RENAME COLUMN <old_column_name> TO <new_column_name>;
 ```
 
-### adding constraint
+### Adding constraint
 ```
 ALTER TABLE 
   <table_name> 
@@ -122,7 +122,7 @@ ADD
    CONSTRAINT <constraint_name> <constraint_type>(<column_name>);  
 ```
 
-The code widget below provides commanfs to add the following constraints:
+The code widget below provides commands to add the following constraints:
 - `PRIMARY_KEY`
 - `UNIQUE`
 - `NOT NULL`
