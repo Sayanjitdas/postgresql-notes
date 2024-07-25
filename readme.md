@@ -2,7 +2,7 @@
 
 ## SQL Basics
 
-# Creating a database
+### Creating a database
 
 > `CREATE DATABASE <database name>`
 
