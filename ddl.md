@@ -72,3 +72,110 @@ CREATE TABLE Order (
 >The DROP TABLE command will permanently delete the table and any data stored in it. We can also use IF EXIST clause as well with Drop table like `DROP TABLE IF EXISTS <table_name>;`
 
 
+### Adding Columns
+```
+ALTER TABLE 
+  <table_name> 
+ADD COLUMN 
+  <column_name> <datatype>;
+```
+
+### Drop Columns
+```
+ALTER TABLE <table_name> 
+  DROP COLUMN <column_name>;
+```
+
+> We can use the IF EXISTS clause with Drop columns like `ALTER TABLE <table_name> DROP Column IF EXISTS phone_number;`
+
+### setting default values for columns
+```
+ALTER TABLE 
+  <table_name> 
+ALTER COLUMN 
+  <column_name> 
+SET 
+  DEFAULT <default_value>;
+```
+
+### Dropping default values for columns
+```
+ALTER TABLE 
+  <table_name> 
+ALTER COLUMN 
+  <column_name> DROP DEFAULT;
+```
+>Be careful when using this command, as it may result in unexpected changes to existing data. It’s always a good idea to back up our data before making any changes.
+
+
+### Renaming columns
+```
+ALTER TABLE 
+  <table_name> RENAME COLUMN <old_column_name> TO <new_column_name>;
+```
+
+### adding constraint
+```
+ALTER TABLE 
+  <table_name> 
+ADD 
+   CONSTRAINT <constraint_name> <constraint_type>(<column_name>);  
+```
+
+The code widget below provides commanfs to add the following constraints:
+- `PRIMARY_KEY`
+- `UNIQUE`
+- `NOT NULL`
+- `DEFAULT`
+- `CHECK`
+- `FOREIGN_KEY`
+
+```
+ALTER TABLE
+  Customer
+ADD
+  CONSTRAINT customer_pk PRIMARY KEY (id); -- Adding PRIMARY KEY
+
+ALTER TABLE
+  Customer
+ADD
+  CONSTRAINT unique_email UNIQUE (email); -- Adding UNIQUE constraint
+
+ALTER TABLE
+  Customer
+ALTER COLUMN
+  id
+SET
+  NOT NULL; -- Adding NOT NULL constraint
+
+ALTER TABLE 
+  Customer 
+ALTER COLUMN 
+  dob 
+SET 
+  DEFAULT '2000-01-01'; -- Adding DEFAULT contstraint
+
+ALTER TABLE
+  Customer
+ADD
+  CONSTRAINT check_customer_id CHECK (id > 0); -- Adding CHECK constraint
+
+ALTER TABLE
+  Users
+ADD
+  CONSTRAINT user_customer_fk FOREIGN KEY (id) REFERENCES Customer (id); 
+--- Adding FOREIGN KEY constraint
+
+\d Customer 
+
+SELECT '\n' AS " "; -- Adding new line
+
+\d Users
+```
+
+### Dropping a constraint
+
+```
+ALTER TABLE 
+  <table_name> DROP CONSTRAINT <constraint_name>; 
+```
