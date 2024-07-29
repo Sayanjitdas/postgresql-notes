@@ -7,7 +7,7 @@ Data types are classifications that define the kind of value a field (or column)
 
 ## Data types in PostgreSQL
 
-## Boolean
+### Boolean
 
 The boolean data type can store two values: `True` or `False`. There’s also a third Unknown state, which is represented by `Null`. It’s used for storing unknown or non applicable values. The boolean data type takes one byte of storage. Boolean data types are often used with logical operators such as `AND`,`OR`, and `NOT`.
 
