@@ -4,3 +4,4 @@ File index
 - SQL Basics
     - [DDL](ddl.md)
     - [Data_types](data_types.md)
+    - [retreive_data(SELECT)](retrieve_data.md)
