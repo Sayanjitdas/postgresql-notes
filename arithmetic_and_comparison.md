@@ -36,17 +36,17 @@ In the SQL query example above, we use various arithmetic operators to perform a
 ### Comparison operators
 
 
-|Operator | Description |
-|---------|-------------|
-| =       | Equals      |
-| !=, <>  | Not equals  |
-| >       | Greater than |
-| >=      | Greater than or equals |
-| <       | Less than |
-| <=      | Less than or equals |
-| LIKE    | Searches for a specified pattern in a column |
+| Operator | Description |
+|----------|-------------|
+| = | Equals |
+| !=, <> | Not equals |
+| > | Greater than |
+| >= | Greater than or equals |
+| < | Less than |
+| <= | Less than or equals |
+| LIKE | Searches for a specified pattern in a column |
 | BETWEEN...AND... | Returns TRUE if a given value falls within a specified range |
-| IN               | Returns TRUE if a specified value is present in the list |
+| IN | Returns TRUE if a specified value is present in the list |
 
 
 Few examples of comparison operators
