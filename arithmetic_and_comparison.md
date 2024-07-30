@@ -39,6 +39,12 @@ In the SQL query example above, we use various arithmetic operators to perform a
 | Operator | Description |
 |----------|-------------|
 | = | Equals |
+| !=, <> | Not Equals |
+
+
+| Operator | Description |
+|----------|-------------|
+| = | Equals |
 | !=, <> | Not equals |
 | > | Greater than |
 | >= | Greater than or equals |
