@@ -15,7 +15,7 @@ Arithmetic operators perform arithmetic operations on numeric data. The arithmet
 
 
 |Operator | Description |
--------------------------
+|---------|-------------|
 | +         | Adds two numeric operands |
 | -         | Subtracts one numeric operand from another |
 | *         | Multiplies two numeric operands |
@@ -34,13 +34,6 @@ SELECT
 In the SQL query example above, we use various arithmetic operators to perform arithmetic operations on numeric data. The value of the first column returned is 3 + 4 = 7, the value of the second column returned is 5 - 2 = 3, the value of the third column returned is 6 * 8 = 48, the value of the fourth column returned is 10 / 2 = 5, and the value of the fifth column returned is 8 % 3 = 2.
 
 ### Comparison operators
-
-
-| Operator | Description |
-|----------|-------------|
-| = | Equals |
-| !=, <> | Not Equals |
-
 
 | Operator | Description |
 |----------|-------------|
