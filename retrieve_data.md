@@ -121,7 +121,7 @@ department	Number of Employees
 IT	        4
 Marketing	1
 HR	        2
-Sales	    2
+Sales       2
 ```
 
 ### HAVING clause
