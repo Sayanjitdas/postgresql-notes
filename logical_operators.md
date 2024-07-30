@@ -1,5 +1,14 @@
 ## Logical Operators in SQL
 
+Content
+---
+- [AND](#and-operator)
+- [OR](#or-operator)
+- [NOT](#not-operator)
+- [ANY](#any-operator)
+- [ALL](#all-operator)
+
+
 
 | Operator | Meaning |
 |----------|---------|
