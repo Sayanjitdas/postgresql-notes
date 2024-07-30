@@ -37,7 +37,7 @@ In the SQL query example above, we use various arithmetic operators to perform a
 
 
 |Operator | Description |
--------------------------
+|---------|-------------|
 | =       | Equals      |
 | !=, <>  | Not equals  |
 | >       | Greater than |
@@ -126,7 +126,7 @@ The LIKE operator is used to search for a specified pattern in a column. The lis
 
 
 |Symbol | Description |
------------------------
+|-------|-------------|
 | %     | Matches any number of characters |
 | _     | Matches a single character |
 
