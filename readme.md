@@ -9,3 +9,4 @@ File index
     - [Logical operators](logical_operators.md)
     - [data presentation](data_presentation.md)
     - [data manipulation](data_manipulation.md)
+    - [data indexing](indexing.md)
